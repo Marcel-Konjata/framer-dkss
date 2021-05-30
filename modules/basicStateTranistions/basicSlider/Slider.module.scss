@@ -1,0 +1,38 @@
+.button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  background-color: white;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &.left {
+    left: -38px;
+  }
+
+  &.right {
+    right: -38px;
+  }
+}
+
+.sliderContainer {
+  width: 450px;
+  height: 600px;
+}
+
+.imageContainer {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imageWrapper {
+  width: 90%;
+  height: 90%;
+}

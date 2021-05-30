@@ -1,0 +1,18 @@
+.input {
+  outline: none;
+  border-bottom: 1px solid black;
+
+  :focus,
+  :active {
+    outline: none;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: fit-content;
+}
