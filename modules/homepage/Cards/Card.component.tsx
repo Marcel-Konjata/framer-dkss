@@ -11,7 +11,9 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ text, urlToRedirect, icon }) => {
 	return (
-		<div className="flex h-60 w-60 shadow flex-col m-auto bg-white">
+		//layout indexes first and last state in grid/flex positions only limitation is that with this simple set all elements needs to be in dom
+		// for effect shuffle card on index page vie buttons
+		<motion.div layout className="flex h-60 w-60 shadow flex-col m-auto bg-white">
 			<div className={`${style.iconWrapper} shadow`}>{icon}</div>
 
 			<p className={style.cardText}>{text}</p>
@@ -19,7 +21,7 @@ const Card: FC<CardProps> = ({ text, urlToRedirect, icon }) => {
 			<Link href={urlToRedirect}>
 				<button className={style.cardButton}>go there</button>
 			</Link>
-		</div>
+		</motion.div>
 	);
 };
 
