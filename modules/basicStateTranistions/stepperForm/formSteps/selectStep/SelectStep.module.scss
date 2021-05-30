@@ -1,0 +1,39 @@
+.styledSelect {
+	max-width: 32rem;
+	margin: 40px auto 20px;
+
+	@media (min-width: 600px) {
+		font-size: 18px;
+		max-width: 500px;
+	}
+}
+
+.selectDefault {
+	border: 5px solid #bdbdbd;
+	border-radius: 8px;
+	padding: 12px 10px;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	justify-content: space-between;
+	background: white;
+	margin-bottom: 12px;
+	cursor: pointer;
+
+	@media (min-width: 600px) {
+		font-size: 18px;
+	}
+
+	span {
+		height: 16px;
+	}
+}
+
+.styledMenu {
+	background: white;
+
+	li {
+		padding: 12px 10px;
+		cursor: pointer;
+	}
+}

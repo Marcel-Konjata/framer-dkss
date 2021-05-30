@@ -1,0 +1,61 @@
+.nameGroup {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+
+	@media (min-width: 550px) {
+		width: 50%;
+	}
+
+	label {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	input {
+		padding: 15px 10px;
+		margin: 15px 5px;
+		border-radius: 8px;
+		border: 1px solid gray;
+	}
+}
+
+.nameFields {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 550px) {
+		flex-direction: row;
+	}
+}
+
+.arreaText {
+	resize: none;
+	margin-top: 20px;
+	width: 100%;
+	min-height: 250px;
+	border-radius: 8px;
+}
+
+.styledForm {
+	max-width: 600px;
+	margin: 60px auto 20px;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+
+	label {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	input {
+		padding: 15px 10px;
+		margin: 15px 5px;
+		border-radius: 8px;
+		border: 1px solid gray;
+	}
+}

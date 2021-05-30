@@ -1,0 +1,28 @@
+.MenuList {
+	display: flex;
+	list-style: none;
+	margin: 20px auto;
+	width: fit-content;
+}
+
+.MenuItem {
+	padding: 1rem 2rem;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+	border-top: 0;
+	border-bottom: 0;
+
+	&:nth-of-type(even) {
+		border-left: 0;
+	}
+
+	&:nth-of-type(odd) {
+		border-left: 0;
+	}
+	&:first-of-type {
+		border-left: 1px solid black;
+	}
+}

@@ -1,0 +1,30 @@
+.styledSection {
+  background: #f3f7f8;
+  padding: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.slideDiv {
+  width: 100%;
+  margin-top: 100px;
+  h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 145%;
+  }
+}
+
+
+.styledButton {
+  border-radius: 20px;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 700;
+}
