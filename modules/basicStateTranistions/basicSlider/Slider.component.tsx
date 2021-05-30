@@ -9,6 +9,7 @@ type directionType = "left" | "right";
 const INDEX_LIMIT = 3;
 
 const variants: Variants = {
+	//the custom property is passed down into variant as function see #https://www.framer.com/api/motion/animate-presence/#animatepresenceprops.custom
 	initial: (direction: directionType) => ({
 		x: direction === "right" ? "-100%" : "100%",
 	}),
@@ -62,6 +63,7 @@ export const Slider: FC = () => {
 					<BiRightArrow size={20} />
 				</button>
 				<div className={`overflow-hidden relative ${styles.imageWrapper}`}>
+					{/*the custom property will pass down state of your choise to set condition in animation on dom exiting, hence exiting animation is out of react completely this is necessary to remembr*/}
 					<AnimatePresence initial={false} custom={direction}>
 						{currentIndex === 1 && (
 							<motion.div
