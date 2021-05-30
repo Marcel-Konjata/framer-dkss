@@ -15,7 +15,9 @@ export const BasicCollapsible: FC = () => {
 				basic collapsible prototyp
 			</div>
 
-			<div className="overflow-hidden">
+			{/*this is only one exception in rule that u should not animate height of the content*/}
+			{/*beware = padding and margin are not animatable thus every collapsible must not have motion.div with padding or margin directly, instead nested div will have these properties*/}
+			<motion.div animate={expandAnimation} className="overflow-hidden">
 				<div className="py-6">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
 					dolorem numquam aut, aliquam, blanditiis reprehenderit ducimus veniam,
@@ -25,7 +27,7 @@ export const BasicCollapsible: FC = () => {
 					reprehenderit ducimus veniam, perspiciatis eveniet neque sit eius
 					culpa atque debitis voluptatibus! Inventore adipisci odio quod?
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
